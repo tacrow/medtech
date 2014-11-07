@@ -1,0 +1,170 @@
+.header {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  min-height: 50px;
+  background-color: #1e90ff;
+  box-shadow: 0 1px 5px rgba(0, 0, 0, 0.5);
+  z-index: 100;
+}
+
+.logoMedtech {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+}
+
+.boxSettingSession {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+}
+
+.btnStyle {
+  -webkit-appearance: none;
+  appearance: none;
+  border: none;
+}
+
+.btnSetting {
+  width: 60px;
+  height: 30px;
+  color: #333333;
+  font-size: 12px;
+  font-weight: bold;
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+  border-radius: 5px;
+}
+
+.btnGood {
+  margin-top: 20px;
+  width: 100%;
+  height: 50px;
+  color: #666666;
+  font-size: 16px;
+  font-weight: bold;
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+  border-radius: 5px;
+}
+
+.wrap {
+  position: relative;
+  top: 50px;
+  width: 100%;
+}
+
+.listSessionBox h2 {
+  margin-top: 10px;
+  padding: 10px;
+  color: #666666;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.listSession .item {
+  position: relative;
+  padding: 10px;
+  border-bottom: 1px solid #dcdcdc;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+.listSession .item:first-child {
+  border-top: 1px solid #dcdcdc;
+}
+
+.listSession .item.touchActive {
+  background-color: #dcdcdc;
+}
+
+.listSession .item h3 {
+  width: 300px;
+  color: #666666;
+  font-size: 14px;
+  font-weight: bold;
+}
+
+.listSession .item dt,
+.listSession .item dd {
+  float: left;
+  color: #999999;
+  font-size: 12px;
+}
+
+.listSession .item p {
+  width: 300px;
+  margin-top: 5px;
+  color: #95a6ad;
+  font-size: 12px;
+}
+
+.pageSession {
+  padding: 10px;
+}
+
+.pageSession h2 {
+  color: #666666;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.timeSession {
+  margin-bottom: 10px;
+}
+
+.abstractSession {
+  margin-bottom: 20px;
+}
+
+.timeSession dt,
+.timeSession dd {
+  float: left;
+  color: #999999;
+  font-size: 12px;
+  font-weight: bold;
+}
+
+.abstractSession dt,
+.abstractSession dd {
+  color: #95a6ad;
+  font-size: 12px;
+}
+
+.abstractSession dt {
+  font-weight: bold;
+}
+
+.boxGrafe {
+  width: 100%;
+  min-height: 180px;
+  background-color: #dcdcdc;
+}
+
+.boxQuiz h2 {
+  padding: 20px 10px 10px;
+  color: #666666;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.listQuiz .item {
+  border-bottom: 1px solid #dcdcdc;
+}
+
+.listQuiz .item:first-child {
+  border-top: 1px solid #dcdcdc;
+}
+
+.listQuiz .item.touchActive {
+  background-color: #dcdcdc;
+}
+
+.listQuiz .item a {
+  padding: 15px 10px;
+  color: #666666;
+  font-size: 14px;
+  font-weight: bold;
+}

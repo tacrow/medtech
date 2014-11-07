@@ -1,0 +1,242 @@
+@import "compass";
+@import "config";
+
+// header
+.header {
+	position: fixed;
+	top: 0;
+	width: 100%;
+	min-height: 70px;
+	background-color: #1e90ff;
+	box-shadow: 0 1px 5px rgba(0, 0, 0, 0.5);
+	z-index: 100;
+}
+
+.boxHeader {
+	position: relative;
+	width: 1000px;
+	margin: 0 auto;
+}
+
+.logoMedtech {
+	position: absolute;
+	top: 15px;
+	left: 20px;
+}
+
+.boxSettingSession {
+	position: absolute;
+	top: 15px;
+	right: 20px;
+}
+
+// wrapper
+.wrap {
+	position: relative;
+	top: 70px;
+	width: 1000px;
+	margin: 0 auto;
+	background-color: #ffffff;
+}
+
+// Session List
+.listSessionBox {
+	padding: 20px;
+	@include box-sizing(border-box);
+}
+
+.listSessionBox h2 {
+	margin-top: 20px;
+	margin-bottom: 20px;
+	color: #666666;
+	font-size: 28px;
+	font-weight: bold;
+}
+
+.listSession .item {
+	position: relative;
+	float: left;
+	width: 225px;
+	min-height: 120px;
+	margin-right: 20px;
+	margin-bottom: 20px;
+	padding: 10px;
+	box-shadow: 0 1px 5px rgba(0, 0, 0, 0.5);
+	@include box-sizing(border-box);
+}
+
+.listSession .item:nth-child(4n) {
+	margin-right: 0;
+}
+
+.listSession .item h3 a {
+	color: #666666;
+	font-size: 18px;
+	font-weight: bold;
+}
+
+.listSession .item h3 a:hover {
+	color: #1e90ff;
+}
+
+.listSession .item dl {
+	margin-bottom: 5px;
+}
+
+.listSession .item dt,
+.listSession .item dd  {
+	float: left;
+	color: #999999;
+	font-size: 12px;
+}
+
+.listSession .item p {
+	color: #95a6ad;
+	font-size: 12px;
+}
+
+// Session Page
+.boxSession,
+.boxGrafe {
+	@include box-sizing(border-box);
+}
+
+.boxSession { padding: 20px 0 20px 20px; }
+
+.boxGrafe { padding: 20px; }
+
+.boxSession {
+	float: left;
+	width: 300px;
+}
+
+.boxSession h2 {
+	color: #666666;
+	font-size: 28px;
+	font-weight: bold;
+}
+
+.session > dl {
+	margin-bottom: 10px
+}
+
+.session > dl dt,
+.session > dl dd {
+	float: left;
+	color: #999999;
+	font-size: 14px;
+	font-weight: bold;
+}
+
+.session > dl dd {
+	font-weight: normal;
+}
+
+.session.abstract > dl dd {
+	font-weight: normal;
+}
+
+.session  p {
+	color: #95a6ad;
+	font-size: 14px;
+}
+
+.btnStyle {
+	-webkit-appearance: none;
+	appearance: none;
+	border: none;
+}
+
+.btnSetting {
+	width: 120px;
+	height: 40px;
+	color: #666666;
+	font-size: 12px;
+	font-weight: bold;
+	@include border-radius(5px);
+}
+
+.btnGood {
+	margin-top: 20px;
+	width: 280px;
+	height: 50px;
+	color: #666666;
+	font-size: 16px;
+	font-weight: bold;
+	@include border-radius(5px);
+}
+
+.boxGrafe {
+	float: left;
+	width: 700px;
+	min-height: 500px;
+	// background-color: #dcdcdc;
+}
+
+.grafe {
+	width: 660px;
+	min-height: 460px;
+	background-color: #ffffff;
+	// @include border-radius(5px);
+	box-shadow: 0 1px 5px rgba(0, 0, 0, 0.5);
+}
+
+//  Quiz
+.boxQuiz {
+	padding: 20px;
+	@include box-sizing(border-box);
+}
+
+.boxQuiz h2 {
+	margin-bottom: 20px;
+	color: #666666;
+	font-size: 28px;
+	font-weight: bold;
+}
+
+.boxSession h2,
+.boxSession h3 {
+	color: #666666;
+	font-weight: bold;
+}
+
+.boxSession h2 {
+	margin-bottom: 5px;
+	font-size: 28px;
+}
+
+.boxSession.quiz h2 {
+	margin-bottom: 20px;
+}
+
+.boxSession h3 {
+	margin-bottom: 5px;
+	font-size: 21px;
+}
+
+.boxQuiz .item {
+	float: left;
+	width: 225px;
+	height: 45px;
+	margin-right: 20px;
+	margin-bottom: 20px;
+	box-shadow: 0 1px 5px rgba(0, 0, 0, 0.5);
+	@include box-sizing(border-box);
+}
+
+.boxQuiz .item:nth-child(4n) {
+	margin-right: 0;
+}
+
+.boxQuiz .item a {
+	padding: 10px;
+	color: #666666;
+	font-size: 14px;
+	font-weight: bold;
+	text-align: center;
+	line-height: 26px;
+}
+
+.boxQuiz .item a:hover {
+	color: #1e90ff;
+}
