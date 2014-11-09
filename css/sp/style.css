@@ -55,13 +55,43 @@
   margin-top: 20px;
   width: 100%;
   height: 50px;
-  color: #666666;
+  color: #ffffff;
   font-size: 18px;
   font-weight: normal;
   -moz-border-radius: 3px;
   -webkit-border-radius: 3px;
   border-radius: 3px;
   box-shadow: 0 4px 0 #7e7e7e;
+}
+
+.listQuizSelect .item:nth-child(1) .btnQuizSelect {
+  background-color: #ff0033;
+  box-shadow: 0 4px 0 #cc0029;
+}
+
+.listQuizSelect .item:nth-child(2) .btnQuizSelect {
+  background-color: #4169e1;
+  box-shadow: 0 4px 0 #3250ab;
+}
+
+.listQuizSelect .item:nth-child(3) .btnQuizSelect {
+  background-color: #ffcc00;
+  box-shadow: 0 4px 0 #cca300;
+}
+
+.listQuizSelect .item:nth-child(4) .btnQuizSelect {
+  background-color: #228b22;
+  box-shadow: 0 4px 0 #155915;
+}
+
+.listQuizSelect .item:nth-child(5) .btnQuizSelect {
+  background-color: #cc33cc;
+  box-shadow: 0 4px 0 #992699;
+}
+
+.listQuizSelect .item:nth-child(6) .btnQuizSelect {
+  background-color: #ff6633;
+  box-shadow: 0 4px 0 #cc5229;
 }
 
 .wrap {
@@ -91,6 +121,22 @@
   background-color: #dcdcdc;
 }
 
+.listSession .item:after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  right: 10px;
+  width: 8px;
+  height: 13px;
+  margin-top: -7px;
+  background-image: url("../../image/arrow_sp.png");
+  background-repeat: no-repeat;
+  -moz-background-size: 8px 13px;
+  -o-background-size: 8px 13px;
+  -webkit-background-size: 8px 13px;
+  background-size: 8px 13px;
+}
+
 .listSession .item a {
   padding: 10px;
   -moz-box-sizing: border-box;
@@ -108,7 +154,7 @@
 .listSession .item dt,
 .listSession .item dd {
   float: left;
-  color: #999999;
+  color: #666666;
   font-size: 12px;
 }
 
@@ -139,18 +185,19 @@
 .timeSession dt,
 .timeSession dd {
   float: left;
-  color: #999999;
+  color: #666666;
   font-size: 12px;
   font-weight: normal;
 }
 
 .abstractSession dt,
 .abstractSession dd {
-  color: #95a6ad;
+  color: #666666;
   font-size: 12px;
 }
 
 .abstractSession dt {
+  font-size: 14px;
   font-weight: normal;
 }
 
@@ -163,6 +210,10 @@
   border-radius: 3px;
 }
 
+.boxQuiz {
+  padding-bottom: 50px;
+}
+
 .boxQuiz h2 {
   padding: 30px 10px 10px;
   color: #666666;
@@ -171,6 +222,7 @@
 }
 
 .listQuiz .item {
+  position: relative;
   border-bottom: 1px solid #dcdcdc;
 }
 
@@ -180,6 +232,22 @@
 
 .listQuiz .item.touchActive {
   background-color: #dcdcdc;
+}
+
+.listQuiz .item:after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  right: 10px;
+  width: 8px;
+  height: 13px;
+  margin-top: -7px;
+  background-image: url("../../image/sp/arrow_sp.png");
+  background-repeat: no-repeat;
+  -moz-background-size: 8px 13px;
+  -o-background-size: 8px 13px;
+  -webkit-background-size: 8px 13px;
+  background-size: 8px 13px;
 }
 
 .listQuiz .item a {
@@ -213,10 +281,11 @@
 .paraQuiz dt,
 .paraQuiz dd {
   color: #666666;
-  font-size: 14px;
+  font-size: 12px;
 }
 
 .paraQuiz dt {
+  font-size: 14px;
   font-weight: normal;
 }
 
