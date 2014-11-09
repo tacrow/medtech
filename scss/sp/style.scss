@@ -38,11 +38,12 @@
 
 .btnSetting {
 	width: 60px;
-	height: 30px;
-	color: #333333;
+	height: 28px;
+	color: #666666;
 	font-size: 12px;
-	font-weight: bold;
-	@include border-radius(5px);
+	font-weight: normal;
+	@include border-radius(3px);
+	box-shadow: 0 2px 0 rgba(126, 126, 126, 1);
 }
 
 .btnGood {
@@ -50,9 +51,47 @@
 	width: 100%;
 	height: 50px;
 	color: #666666;
-	font-size: 16px;
-	font-weight: bold;
-	@include border-radius(5px);
+	font-size: 18px;
+	font-weight: normal;
+	@include border-radius(3px);
+	box-shadow: 0 4px 0 rgba(126, 126, 126, 1);
+}
+
+.btnQuizSelect {
+	margin-top: 20px;
+	width: 100%;
+	height: 50px;
+	color: #666666;
+	font-size: 18px;
+	font-weight: normal;
+	@include border-radius(3px);
+	box-shadow: 0 4px 0 rgba(126, 126, 126, 1);
+}
+
+//  Quiz Btn Color
+.btnQuizSelect:nth-child(1) {
+
+}
+.btnQuizSelect:nth-child(2) {
+
+}
+.btnQuizSelect:nth-child(3) {
+
+}
+.btnQuizSelect:nth-child(4) {
+
+}
+.btnQuizSelect:nth-child(5) {
+
+}
+.btnQuizSelect:nth-child(6) {
+
+}
+.btnQuizSelect:nth-child(7) {
+
+}
+.btnQuizSelect:nth-child(8) {
+
 }
 
 .wrap {
@@ -65,15 +104,13 @@
 	margin-top: 10px;
 	padding: 10px;
 	color: #666666;
-	font-size: 16px;
-	font-weight: bold;
+	font-size: 18px;
+	font-weight: normal;
 }
 
 .listSession .item {
 	position: relative;
-	padding: 10px;
 	border-bottom: 1px solid #dcdcdc;
-	@include box-sizing(border-box);
 }
 
 .listSession .item:first-child {
@@ -84,11 +121,16 @@
 	background-color: #dcdcdc;
 }
 
+.listSession .item a {
+	padding: 10px;
+	@include box-sizing(border-box);
+}
+
 .listSession .item h3 {
 	width: 300px;
 	color: #666666;
-	font-size: 14px;
-	font-weight: bold;
+	font-size: 16px;
+	font-weight: normal;
 }
 
 .listSession .item dt,
@@ -100,7 +142,7 @@
 
 .listSession .item p {
 	width: 300px;
-	margin-top: 5px;
+	// margin-top: 5px;
 	color: #95a6ad;
 	font-size: 12px;
 }
@@ -113,7 +155,7 @@
 .pageSession h2 {
 	color: #666666;
 	font-size: 16px;
-	font-weight: bold;
+	font-weight: normal;
 }
 
 .timeSession {
@@ -129,7 +171,7 @@
 	float: left;
 	color: #999999;
 	font-size: 12px;
-	font-weight: bold;
+	font-weight: normal;
 }
 
 .abstractSession dt,
@@ -139,21 +181,24 @@
 }
 
 .abstractSession dt {
-	font-weight: bold;
+	font-weight: normal;
 }
 
 // グラフ
 .boxGrafe {
 	width: 100%;
 	min-height: 180px;
-	background-color: #dcdcdc;
+	// background-color: #dcdcdc;
+	border: 1px solid #dcdcdc;
+	// box-shadow: 0 2px 0 rgba(126, 126, 126, 0.6);
+	@include border-radius(3px);
 }
 
 .boxQuiz h2 {
-	padding: 20px 10px 10px;
+	padding: 30px 10px 10px;
 	color: #666666;
 	font-size: 16px;
-	font-weight: bold;
+	font-weight: normal;
 }
 
 .listQuiz .item {
@@ -172,5 +217,67 @@
 	padding: 15px 10px;
 	color: #666666;
 	font-size: 14px;
-	font-weight: bold;
+	font-weight: normal;
+}
+
+// クイズ
+.pageQuiz .timeSession {
+	padding-bottom: 10px;
+	border-bottom: 1px solid #dcdcdc;
+}
+
+.pageQuiz h3 {
+	margin-top: 15px;
+	margin-bottom: 10px;
+	color: #666666;
+	font-size: 16px;
+	font-weight: normal;
+}
+
+.paraQuiz {
+	padding: 8px 10px 10px;
+	border: 1px solid #dcdcdc;
+	@include border-radius(3px);
+}
+
+.paraQuiz dt,
+.paraQuiz dd {
+	color: #666666;
+	font-size: 14px;
+}
+
+.paraQuiz dt {
+	font-weight: normal;
+}
+
+.listQuizSelect {
+	width: 100%;
+	margin-bottom: 50px;
+	// padding: 0 10px;
+}
+
+.listQuizSelect .item {
+	float: left;
+	width: 50%;
+	@include box-sizing(border-box);
+}
+
+.listQuizSelect .item:nth-child(odd) {
+	padding-right: 5px;
+}
+
+.listQuizSelect .item:nth-child(even) {
+	padding-left: 5px;
+}
+
+//  footer
+.footer {
+	padding: 20px 10px;
+	background-color: #7e7e7e;
+	color: #ffffff;
+	font-size: 11px;
+}
+
+.copyright {
+	text-align: center;
 }
