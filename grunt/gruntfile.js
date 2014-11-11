@@ -52,12 +52,12 @@ module.exports = function(grunt) {
 				path.css_pc + "helper.css"
 			],
 			js_sp: [
-				path.js_sp + "medtech1.js",
-				path.js_sp + "medtech2.js"
+				path.js_sp + "medtech1.js"
+				// path.js_sp + "medtech2.js"
 			],
 			js_pc: [
-				path.js_pc + "medtech1.js",
-				path.js_pc + "medtech2.js"
+				path.js_pc + "medtech1.js"
+				// path.js_pc + "medtech2.js"
 			]
 		}
 	};

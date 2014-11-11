@@ -501,8 +501,16 @@ img {
 
 .logoMedtech {
   position: absolute;
-  top: 10px;
-  left: 10px;
+  top: 19px;
+  left: 15px;
+  width: 62px;
+  height: 13px;
+  background-image: url("../../image/sp/img_logo.png");
+  background-repeat: no-repeat;
+  -moz-background-size: 62px 13px;
+  -o-background-size: 62px 13px;
+  -webkit-background-size: 62px 13px;
+  background-size: 62px 13px;
 }
 
 .boxSettingSession {
@@ -512,9 +520,16 @@ img {
 }
 
 .btnStyle {
+  display: inline-block;
   -webkit-appearance: none;
   appearance: none;
-  border: none;
+  -webkit-background-clip: padding-box;
+  background-clip: padding-box;
+  -webkit-user-select: none;
+  user-select: none;
+  -webkit-transition-duration: 0.1s;
+  transition-duration: 0.1s;
+  border: 0 none;
 }
 
 .btnSetting {
@@ -540,6 +555,12 @@ img {
   -webkit-border-radius: 3px;
   border-radius: 3px;
   box-shadow: 0 4px 0 #7e7e7e;
+}
+
+.btnGood.touchActive {
+  position: relative;
+  top: 3px;
+  box-shadow: 0 1px 0 #7e7e7e;
 }
 
 .btnQuizSelect {
@@ -583,6 +604,40 @@ img {
 .listQuizSelect .item:nth-child(6) .btnQuizSelect {
   background-color: #ff6633;
   box-shadow: 0 4px 0 #cc5229;
+}
+
+.listQuizSelect .item:nth-child(1) .btnQuizSelect.touchActive,
+.listQuizSelect .item:nth-child(2) .btnQuizSelect.touchActive,
+.listQuizSelect .item:nth-child(3) .btnQuizSelect.touchActive,
+.listQuizSelect .item:nth-child(4) .btnQuizSelect.touchActive,
+.listQuizSelect .item:nth-child(5) .btnQuizSelect.touchActive,
+.listQuizSelect .item:nth-child(6) .btnQuizSelect.touchActive {
+  position: relative;
+  top: 3px;
+}
+
+.listQuizSelect .item:nth-child(1) .btnQuizSelect.touchActive {
+  box-shadow: 0 1px 0 #cc0029;
+}
+
+.listQuizSelect .item:nth-child(2) .btnQuizSelect.touchActive {
+  box-shadow: 0 1px 0 #3250ab;
+}
+
+.listQuizSelect .item:nth-child(3) .btnQuizSelect.touchActive {
+  box-shadow: 0 1px 0 #cca300;
+}
+
+.listQuizSelect .item:nth-child(4) .btnQuizSelect.touchActive {
+  box-shadow: 0 1px 0 #155915;
+}
+
+.listQuizSelect .item:nth-child(5) .btnQuizSelect.touchActive {
+  box-shadow: 0 1px 0 #992699;
+}
+
+.listQuizSelect .item:nth-child(6) .btnQuizSelect.touchActive {
+  box-shadow: 0 1px 0 #cc5229;
 }
 
 .wrap {
@@ -637,20 +692,38 @@ img {
 
 .listSession .item h3 {
   width: 300px;
+  margin-bottom: 2px;
   color: #666666;
-  font-size: 16px;
-  font-weight: normal;
+  font-size: 14px;
+  font-weight: bold;
 }
 
 .listSession .item dt,
 .listSession .item dd {
+  vertical-align: top;
   float: left;
-  color: #666666;
+  color: #999999;
   font-size: 12px;
+}
+
+.listSession .item dt:before {
+  display: inline-block;
+  content: "";
+  width: 12px;
+  height: 12px;
+  margin-top: 2px;
+  margin-right: 3px;
+  background-image: url("../../image/sp/icon_time_sp.png");
+  background-repeat: no-repeat;
+  -moz-background-size: 12px 12px;
+  -o-background-size: 12px 12px;
+  -webkit-background-size: 12px 12px;
+  background-size: 12px 12px;
 }
 
 .listSession .item p {
   width: 300px;
+  margin-top: 3px;
   color: #95a6ad;
   font-size: 12px;
 }
@@ -670,15 +743,27 @@ img {
 }
 
 .abstractSession {
+  margin-top: 10px;
   margin-bottom: 20px;
 }
 
 .timeSession dt,
-.timeSession dd {
+.timeSession dd,
+.presenterInfo dt,
+.presenterInfo dd {
   float: left;
-  color: #666666;
   font-size: 12px;
   font-weight: normal;
+}
+
+.timeSession dt,
+.timeSession dd {
+  color: #999999;
+}
+
+.presenterInfo dt,
+.presenterInfo dd {
+  color: #666666;
 }
 
 .abstractSession dt,
@@ -786,19 +871,10 @@ img {
 }
 
 .listQuizSelect .item {
-  float: left;
-  width: 50%;
+  width: 100%;
   -moz-box-sizing: border-box;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
-}
-
-.listQuizSelect .item:nth-child(odd) {
-  padding-right: 5px;
-}
-
-.listQuizSelect .item:nth-child(even) {
-  padding-left: 5px;
 }
 
 .footer {
